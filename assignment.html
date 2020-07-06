@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook</title>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Muli:wght@800&display=swap" rel="stylesheet">
+    <style>
+        *{ margin:0; padding:0; font-family: 'Mukta', sans-serif;}
+        #header{
+            width: 100%;
+            height: 82px;
+            margin: 0 auto;
+            overflow: hidden;
+            color: #ffffff;
+            background-color: #465E97;
+            font-family: 'Muli', sans-serif;
+        }
+        #header #headerin{
+            padding:10px;
+            width:1000px;
+            height: 100px;
+            margin: 0 auto;
+            font-size: 0.7em;
+        }
+        #header #logo {
+            float: left;
+            margin-top: 4px;
+            font-size: 19px;
+        }
+        #header #signin #inpassword{
+            float: right;
+            padding-right: 30px;
+        }
+        #header #signin #inpassword input{
+            width: 150px;
+        }
+        #header #signin #inpassword p{
+            color:#93d4e7b2;
+        }
+        #header #signin #inpassword button{
+            margin-left: 10px;
+            color:#ffffff;
+            background-color:#506db1;
+            border-style: none;
+            border: solid 1px #2d3d63;
+            font-size: 1.1em;
+            padding:1px 7px;
+        }
+        #header #signin #inpassword button:active{background-color:#465E97;}
+        #header #signin #inemailornumber{
+            padding-right: 14px;
+            float: right;
+        }
+        #header #signin #inemailornumber input{
+            width: 150px;
+        }
+        #wrap {
+            width: 100%;
+            height: 600px;
+            margin: 0 auto;
+            overflow: hidden; 
+            background: #fcfcfd; /* Old browsers */
+            background: -moz-linear-gradient(top,  #fcfcfd 0%, #fcfcfd 0%, #fcfcfd 0%, #d5d9e7 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  #fcfcfd 0%,#fcfcfd 0%,#fcfcfd 0%,#d5d9e7 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  #fcfcfd 0%,#fcfcfd 0%,#fcfcfd 0%,#d5d9e7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfd', endColorstr='#d5d9e7',GradientType=0 ); /* IE6-9 */
+        }
+        #wrap #wrapin{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        #wrap #side_banner {
+            margin-top: 30px;
+            width: 585px;
+            float: left;
+            font-size: 1.3em;
+            font-weight: 620;
+            color: #2d3d63;
+        }
+        #wrap #content {
+            margin-top: 20px;
+            width: 415px;
+            float: left;
+        } 
+        #wrap #content .text1{
+            margin-top: 10px;
+            border-radius: 5px;
+            border-style:none;
+            border: solid 1px silver;
+            height: 33px;
+            margin-left: 2px;
+            width: 160px;
+        }
+        #wrap #content .text2{
+            border-radius: 5px;
+            border-style:none;
+            border: solid 1px silver;
+            height: 33px;
+            margin-left: 7px;
+            width: 160px;
+        }
+        #wrap #content .text3{
+            margin-top: 10px;
+            border-radius: 5px;
+            border-style:none;
+            border: solid 1px silver;
+            height: 33px;
+            margin-left: 2px;
+            width: 332px;
+        }
+        #wrap #content .text4{
+            margin-top: 10px;
+            border-radius: 5px;
+            border-style:none;
+            border: solid 1px silver;
+            height: 33px;
+            margin-left: 2px;
+            width: 332px;
+        }
+        #wrap #content h2 {
+            font-size: 2.3em;
+            font-weight: 600;
+        }
+        #wrap #content h3 {
+            font-weight: 400;
+        }
+        #wrap #content p {
+            margin-bottom: 4px;
+            margin-top: 10px;
+            font-size: 1em;
+            font-weight: bold;
+            color:rgb(138, 138, 138);
+        }
+        #wrap #content #text{
+            margin-top: 16px;
+            font-weight: 600;
+            font-size: 0.75em;
+            color:rgb(138, 138, 138);
+            width: 300px;
+        }
+        #wrap #content input[type=radio] {
+            margin-left: 6px;
+            margin-right: 10px;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        #wrap #content button {
+            width: 195px;
+            height: 37px;
+            background-color: rgb(67, 153, 27);
+            font-size: 1.2em;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+        #footer {
+            width: 100%;
+            height: 100px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #footer div{
+            text-align: center;
+            width: 1000px;
+            margin: 0 auto;
+            font-size: 0.8em;
+        }
+        #footer div ul li:hover{
+            text-decoration-line: underline;
+        }
+        
+        #footer div ul li {
+            float: left;
+            margin-left: 10px;
+            list-style: none;
+            text-align: center;
+            color: rgb(75, 110, 139);
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="header">
+        <div id="headerin">
+            <div id="logo">
+                <h1>facebook</h1>
+            </div>
+
+            <div id="signin">
+                <div id="inpassword">
+                    비밀번호<br /><input type="text" name="password" />
+                    <button>로그인</button><br />
+                    <p>계정을 잊으셨나요?</p>
+                </div>
+                <div id="inemailornumber">
+                    이메일 또는 휴대폰<br /><input type="text" name="emailornumber" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="wrap">
+        <div id="wrapin">
+            <div id="side_banner">
+                <p>Facebook에서 전세계에 있는 친구,가족,지인들과</p>
+                <p>함께 이야기를 나눠보세요.</p>
+                <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/mdFUMX-w0Fu.png" width="500px"/>
+            </div>
+ 
+            <div id="content">
+                <h2>가입하기</h2>
+                <h3>빠르고 쉽습니다.</h3>
+                <input class="text1" type="text" name="lastname" placeholder="  성"/>
+                <input class="text2" type="text" name="firstname" placeholder="  이름(성은 제외)"/><br />
+                <input class="text3" type="text" name="numberoremail" placeholder="  휴대폰 번호 또는 이메일"/><br />
+                <input class="text4" type="text" name="newpassword" placeholder="  새 비밀번호"/><br />
+                <p>생일</p>
+                <select>
+                    <option>2000</option>
+                    <option>2001</option>
+                </select>
+                <select>
+                    <option>1월</option>
+                    <option>2월</option>
+                    <option>4월</option>
+                </select>
+                <select>
+                    <option>1일</option>
+                    <option>2일</option>
+                    <option>17일</option>
+                </select>
+
+                <p>성별</p>
+                <input type="radio" name="gender" value="m">여성
+                <input type="radio" name="gender" value="w">남성
+                <input type="radio" name="gender" value="w">직접 지정<br />
+                <p id="text">가입하기 버튼을 클릭하면 Facebook의 약관, 데이터 정책 및 쿠키 정책에 동의하게 됩니다. Facebook으로부터 SMS 알림을 받을 수 있으며 알림은 언제든지 옵트 아웃할 수 있습니다.</p>
+                <button>가입하기</button>
+                <p>유명인,밴드,비즈니스를 위한 페이지 만들기</p>
+            </div>
+
+        </div>
+    </div>    
+
+
+    <div id="footer">
+
+        <div>
+            <ul>
+                <li class="menu1">한국어</li>
+                <li class="menu2">English (US)</li>
+                <li class="menu3">Tiếng Việt</li>
+                <li class="menu1">Bahasa Indonesia</li>
+                <li class="menu2">ภาษาไทย</li>
+                <li class="menu3">中文(简体)</li>
+                <li class="menu1">日本語</li>
+                <li class="menu2">Português (Brasil)</li>
+                <li class="menu3">Français (France)</li>
+                <li class="menu1">Deutsch</li>
+                <li class="menu2">Español</li>
+            </ul>
+        </div>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header{ width: 500px; border:1px solid #cccccc; font: size 2em; font-weight: bold;}
+        #wrap{ width: 500px; border:1px solid #cccccc; font: size 2em; font-weight: bold; overflow: hidden;}
+        #content {float : left; border: 1px solid #cccccc; width:300px}
+        #side_banner{ float : left;width: 500px; border:1px solid #cccccc; font: size 2em; font-weight: bold;}
+        #footer{ width: 500px; border:1px solid #cccccc; font: size 2em; font-weight: bold;}
+        ul > li {
+            font-size: 20px;
+            color: orange;
+            font-weight: bold;
+        }
+
+        #header{
+            width: 300px; margin: 0 auto;
+            border-radius: 0 30px;
+        }
+        
+        li:hover {
+            color :blue;
+        }
+
+        input:focus {
+            border: 2px solid #000000;
+        }
+        
+        input:enabled {
+            color:#ffffff;
+            font-weight:bold;
+        }
+
+        input:disabled {
+            color:#ff0000
+        }  
+
+        ul li:first-child{ border-radius:10px 10px 0 0; }
+        ul li:last-child{border-radius: 0 0 10px 10px;}
+    
+    </style>
+</head>
+<body>
+   <div id="header">
+       header
+   </div>
+   
+   <div id="wrap">
+       <div id="content">
+           <ul>
+               <li class="menu1">menu1</li>
+               <li class="menu2">menu2</li>
+               <li class="menu3">menu3</li>
+           </ul>
+       </div>
+
+       <div id="side_banner">
+           <img src="https://cdn.inflearn.com/wp-content/uploads/web1.png"/>
+
+       </div>
+   </div>
+    
+   <div id="footer">
+       footer
+   </div>
+
+   <div>
+       <form>
+           이름: <input type="text" name="uname"/><br />
+           아이디: <input type="text" name="uid"/><br />
+           비밀번호: <input type="password" name="upw" value="12345" disabled="disabled"/><br />
+       </form>
+   </div>
+
+</body>
+</html>
